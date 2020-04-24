@@ -27,9 +27,28 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+
+The general concept behind a token-based authentication system is simple. Allow users to enter their username and password in order to obtain a token which allows them to fetch a specific resource - without using their username and password. Once their token has been obtained, the user can offer the token - which offers access to a specific resource for a time period - to the remote site.
+
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+Query Parameterisation, Secure password storage, Contextual output encoding XSS defense, Content security policy, cryptographic tokens and requiring users to re-authenticate to complete a transaction or event to prevent in-session hijacks, Validate identity with security questions- Send the user a randomly generated token via out-of-band method (i.e. SMS or token)- Verify code in the same web session and enforce a lockout policy- Change the password
+
+
 - [ ] Describe how web servers work.
+
+A Web server is software or hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond to client requests made over the World Wide Web (WWW). Web server software controls how a user accesses hosted files. It is accessed through the domain names of websites and ensures the delivery of the site's content to the requesting user. As hardware, a Web server is a computer that holds web server software and other files related to a website, such as HTML documents, images and JavaScript files. Web server hardware is connected to the internet and allows data to be exchanged with other connected devices.
+
+
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+Create = PUT with a new URI
+         POST to a base URI returning a newly created URI
+Read   = GET
+Update = PUT with an existing URI
+Delete = DELETE
+
 
 
 ## Project Set Up
